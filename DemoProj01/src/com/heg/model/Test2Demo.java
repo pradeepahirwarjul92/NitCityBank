@@ -9,5 +9,9 @@ public class Test2Demo {
 	public static void main(String[] args) {
 		System.out.println("Test2Demo.main()");
 	}
+	
+	public String getName(String name) {
+		return "Hii Mr/Mrs " +name;
+	}
 
 }
