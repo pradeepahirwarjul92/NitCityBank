@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+
+	<class name="com.heg.model.Order" table="hbm_orders">
+		
+		<composite-id name="id" class="com.heg.model.OrderId">
+			<key-property name="orderId" column="order_id" />
+			<key-property name="customerId" column="customer_id" />
+		</composite-id>
+
+		<property name="product" column="order_product" />
+
+	</class>
+
+</hibernate-mapping>

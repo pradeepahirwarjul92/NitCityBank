@@ -1,0 +1,27 @@
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect
+		</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.9.34:1521:baan
+		</property>
+		<property name="hibernate.connection.username">hr</property>
+		<property name="hibernate.connection.password">hr</property>
+
+
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">true</property>
+
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping class="com.heg.model.ParticipantsModel" />
+
+
+
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,8 @@
+com\heg\model\Order.class
+com\heg\model\OrderId.class
+com\heg\model\ProjectInfo.class
+com\heg\test\Test.class
+com\heg\test\TestAnotation.class
+com\heg\test\LoadObjectDemo.class
+com\heg\model\ProjectId.class
+com\heg\util\HibernateUtil.class

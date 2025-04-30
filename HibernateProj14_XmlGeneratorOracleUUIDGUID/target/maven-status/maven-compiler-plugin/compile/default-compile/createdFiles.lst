@@ -1,0 +1,3 @@
+com\heg\utils\HibernateUtil.class
+com\heg\entity\Product.class
+com\heg\testApp\SaveObjectOracle.class

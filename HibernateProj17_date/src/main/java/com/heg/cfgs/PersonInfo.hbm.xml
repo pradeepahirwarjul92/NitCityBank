@@ -1,0 +1,16 @@
+<hibernate-mapping>
+
+	<class name="com.heg.entity.PersonInfo" table="PERSON_INFO">
+		<id name="pid">
+			<generator class="sequence" />
+		</id>
+
+		<property name="pname" length="20" type="string" />
+		<property name="paddrs" length="20" type="string" />
+		<property name="dob" type="date" />
+		<property name="dom" type="date" />
+		<property name="doj" type="date" />
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect
+		</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.9.34:1521:baan
+		</property>
+		<property name="hibernate.connection.username">scott</property>
+		<property name="hibernate.connection.password">tiger</property>
+
+
+
+		<!-- Session Context (for getCurrentSession()) -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- Show and Format SQL -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping resource="com/heg/cfgs/order.hbm.xml"></mapping>
+		
+		<mapping class="com.heg.model.ProjectInfo"/>
+
+
+	</session-factory>
+
+</hibernate-configuration>
