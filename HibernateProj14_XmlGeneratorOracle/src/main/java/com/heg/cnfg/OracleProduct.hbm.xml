@@ -1,0 +1,44 @@
+<hibernate-mapping>
+
+	<!-- Mapping the Product class to the "product" table -->
+	<class name="com.heg.entity.Product" table="product_detail">
+
+		<!-- Mapping the "id" field to the "id" column in the database -->
+		<id name="pid" column="pid">
+			<!-- <generator class="increment"></generator> -->
+
+			<!-- <generator class="identity"> </generator> Oracle not support Identity 
+				generator -->
+
+
+			<!-- <generator class="sequence"> <param name="sequence">HBM_SEQ_TEST</param> 
+				</generator> -->
+
+			<!-- <generator class="hilo">
+				<param name="table">HI_TAB </param>
+				<param name="column">HI_COL</param>
+				<param name="max_lo">5</param>
+			</generator> -->
+			
+			
+		<!-- 	<generator class="seqhilo">
+			<param name="sequence">HBM_SEQ_TEST</param>
+			<param name="max_lo">10</param>
+			</generator> -->
+			
+			<generator class="native"></generator>
+
+		</id>
+
+		<!-- Mapping the "name" field to the "name" column -->
+		<property name="pName" column="pName" />
+
+		<!-- Mapping the "description" field to the "description" column -->
+		<property name="price" column="price" />
+
+		<!-- Mapping the "price" field to the "price" column -->
+		<property name="qty" column="qty" />
+
+	</class>
+
+</hibernate-mapping>
