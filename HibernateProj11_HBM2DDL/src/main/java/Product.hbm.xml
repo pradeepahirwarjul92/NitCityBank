@@ -1,0 +1,25 @@
+
+<hibernate-mapping>
+    
+    <!-- Mapping the Product class to the "product" table -->
+    <class name="com.heg.entity.Product" table="product_test1">
+        
+        <!-- Mapping the "id" field to the "id" column in the database -->
+        <id name="pid" column="pid" type="long" length="15">
+            <generator class="identity"/>
+        </id>
+        
+        <!-- Mapping the "name" field to the "name" column -->
+        <property name="pName" column="pName" type="string" length="100" unique="true" not-null="true" />
+        
+        <!-- Mapping the "description" field to the "description" column -->
+        <property name="price" column="price" type="float" scale="10" precision="2" not-null="true" />
+        
+        <!-- Mapping the "price" field to the "price" column -->
+        <property name="qty" column="qty"  type="float" scale="10" precision="2" not-null="true"/>
+        
+        <property name="type" column="TYPE"></property>
+        
+    </class>
+
+</hibernate-mapping>

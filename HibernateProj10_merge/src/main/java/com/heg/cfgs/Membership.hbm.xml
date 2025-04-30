@@ -1,0 +1,20 @@
+
+<hibernate-mapping>
+    
+    <!-- Mapping the Product class to the "product" table -->
+    <class name="com.heg.entity.Membership" table="supermarket_membership" dynamic-update="true" dynamic-insert="true">
+        
+        <id name="mid" column="mid" unsaved-value="34">
+           <!--  <generator class="increment"></generator> -->
+        </id>
+        
+        <property name="name" column="name" />
+        
+       
+        <property name="addrs" column="addrs" />
+        
+        <property name="rewardPoints" column="rewardpoints" />
+        
+    </class>
+
+</hibernate-mapping>

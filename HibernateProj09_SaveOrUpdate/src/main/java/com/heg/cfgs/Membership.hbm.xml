@@ -1,0 +1,19 @@
+<hibernate-mapping>
+    
+    <!-- Mapping the Product class to the "product" table -->
+    <class name="com.heg.entity.Membership" table="supermarket_membership" >
+        
+        <id name="mid" column="mid" unsaved-value="8892" >
+          <!--  <generator class="increment"></generator> -->
+        </id>
+        
+        <property name="name" column="name" />
+        
+       
+        <property name="addrs" column="addrs" />
+        
+        <property name="rewardPoints" column="rewardpoints" />
+        
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+
+<hibernate-mapping>
+    
+    <!-- Mapping the Product class to the "product" table -->
+    <class name="com.heg.entity.BankAccount" table="bankaccount">
+        
+        <!-- Mapping the "id" field to the "id" column in the database -->
+        <id name="acno" column="acno" />
+       
+      
+        <!-- Mapping the "name" field to the "name" column -->
+        <property name="holderName" column="holderName" />
+        
+        <!-- Mapping the "description" field to the "description" column -->
+        <property name="balance" column="balance" />
+        
+       
+        
+    </class>
+
+</hibernate-mapping>

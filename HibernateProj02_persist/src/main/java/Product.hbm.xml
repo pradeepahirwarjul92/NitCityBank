@@ -1,0 +1,23 @@
+
+<hibernate-mapping>
+    
+    <!-- Mapping the Product class to the "product" table -->
+    <class name="com.heg.entity.Product" table="product">
+        
+        <!-- Mapping the "id" field to the "id" column in the database -->
+        <id name="pid" column="pid">
+         <generator class="identity" />
+        </id>
+        
+        <!-- Mapping the "name" field to the "name" column -->
+        <property name="pName" column="pName" />
+        
+        <!-- Mapping the "description" field to the "description" column -->
+        <property name="price" column="price" />
+        
+        <!-- Mapping the "price" field to the "price" column -->
+        <property name="qty" column="qty" />
+        
+    </class>
+
+</hibernate-mapping>
